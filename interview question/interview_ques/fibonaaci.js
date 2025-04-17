@@ -24,12 +24,28 @@
 // }
 // console.log(fib(15));
 
-function fib(n) {
-  const arr = [0, 1];
-  for (i = 0; i < n - 1; i++) {
-    arr.push(arr[i] + arr[i + 1]);
+// function fib(n) {
+//   const arr = [0, 1];
+//   for (i = 0; i < n - 1; i++) {
+//     arr.push(arr[i] + arr[i + 1]);
+//   }
+//   return arr
+// }
+
+// console.log(fib(15));
+
+function fib(n){
+  let a=0
+  let b=1
+  let c=a+b
+  console.log(a)
+  console.log(b)
+  for (let i=2; i<n; i++){
+    console.log(c)
+    a = b
+    b = c
+    c=a+b
   }
-  return arr
 }
 
-console.log(fib(15));
+fib(7)
